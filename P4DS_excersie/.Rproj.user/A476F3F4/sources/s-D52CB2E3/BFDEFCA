@@ -1,0 +1,27 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1579096250171.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "BFDEFCA",
+    "lastKnownWriteTime" : 1579095693,
+    "last_content_update" : 1579097430732,
+    "path" : "~/Google Drive/Algoritma/Week 1/Day 3 Data Transformation & cross tabulation & aggregates/P4DS/retail_exploration.rmd",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "297,25",
+        "last_setup_crc32" : "D52CB2E3bb338d19",
+        "scrollLine" : "295",
+        "source_window_id" : "wnktt0juna6mq"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

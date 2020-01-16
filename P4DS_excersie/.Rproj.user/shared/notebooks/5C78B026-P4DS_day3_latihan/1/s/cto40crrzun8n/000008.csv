@@ -1,0 +1,7 @@
+"0",""
+"0","kopi_coffee_lower_median <- kopi_data_clean[kopi_data_clean$drink == ""coffee"" & kopi_data_clean$age < median(kopi_data_clean$age), ]"
+"0","nrow(kopi_coffee_lower_median)"
+"1","[1]"
+"1"," 18"
+"1","
+"

@@ -1,0 +1,3 @@
+"0",""
+"0","kopi_order_score <- kopi_data_clean[order(kopi_data_clean$score, decreasing = T), ];"
+"0","kopi_order_score;"

@@ -1,0 +1,27 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1579096138325.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2321188053",
+    "id" : "F84612C2",
+    "lastKnownWriteTime" : 1579098101,
+    "last_content_update" : 1579098101994,
+    "path" : "~/Google Drive/Algoritma/Week 1/Day 3 Data Transformation & cross tabulation & aggregates/P4DS_day3_latihan/P4DS_day3_latihan.Rmd",
+    "project_path" : "P4DS_day3_latihan.Rmd",
+    "properties" : {
+        "cursorPosition" : "52,18",
+        "last_setup_crc32" : "D52CB2E3bb338d19",
+        "scrollLine" : "44",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

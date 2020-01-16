@@ -1,0 +1,6 @@
+"0",""
+"0","aggregate("
+"0","  Profit ~ Ship.Mode + Category,"
+"0","  data = retail_clean, "
+"0","  FUN = max"
+"0","          )"

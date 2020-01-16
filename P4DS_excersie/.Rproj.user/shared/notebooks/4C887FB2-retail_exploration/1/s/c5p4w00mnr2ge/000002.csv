@@ -1,0 +1,1 @@
+"0","plot(xtabs(data = retail_clean, formula = Profit ~ Ship.Mode + Category))"

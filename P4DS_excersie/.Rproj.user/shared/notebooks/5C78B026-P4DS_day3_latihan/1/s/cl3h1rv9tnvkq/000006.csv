@@ -1,0 +1,8 @@
+"0",""
+"0","kopi_male_greentea <- nrow(kopi_data_clean[kopi_data_clean$gender == ""male"" & kopi_data_clean$drink == ""greentea"", ])"
+"0",""
+"0","kopi_male_greentea"
+"1","[1]"
+"1"," 28"
+"1","
+"

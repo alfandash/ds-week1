@@ -1,0 +1,6 @@
+"0",""
+"0","retail$Order.Date <- as.Date(retail$Order.Date,  format = ""%m/%d/%y"");"
+"0","retail$Ship.Date <- as.Date(retail$Ship.Date, format = ""%m/%d/%y"");"
+"0","retail$Product.Name <- as.character(retail$Product.Name);"
+"0","# retail$Product.Name <- format(as.Date())"
+"0","retail;"

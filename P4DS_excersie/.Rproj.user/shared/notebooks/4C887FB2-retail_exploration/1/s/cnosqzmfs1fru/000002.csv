@@ -1,0 +1,8 @@
+"0","# get working directory"
+"0","getwd()"
+"1","[1]"
+"1"," ""/Users/alfanasshari/Google Drive/Algoritma/Week 1/Day 3 Data Transformation & cross tabulation & aggregates/P4DS"""
+"1","
+"
+"0","retail <- read.csv(""data_input/retail.csv"")"
+"0","retail"

@@ -1,0 +1,8 @@
+"0","# dim(retail)"
+"0","# names(retail)"
+"0","#str(retail)"
+"0","#View(retail)"
+"0","#head(retail, 5)"
+"0",""
+"0","# purchases <- 15;"
+"0","# purchases * 2;"

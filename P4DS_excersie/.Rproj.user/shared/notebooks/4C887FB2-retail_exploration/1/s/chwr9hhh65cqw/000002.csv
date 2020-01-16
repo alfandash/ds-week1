@@ -1,0 +1,4 @@
+"0","# retail <- retail[, c(""Order.Date"")] << add column menggunakan nama"
+"0",""
+"0","# menggunakan fungsi subset (menggunakan ""-"" untuk mengurangi kolom yang dipilih, jika tanpa ""-"" hanya ""c()"" maka column yang dipilih saja)"
+"0","subset(retail, select = -c(Ship.Date, Profit))"

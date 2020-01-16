@@ -1,0 +1,3 @@
+"0",""
+"0","retail_clean$profitable <- ifelse(retail_clean$Profit > 0, ""profitable"", ""non-profitable"")"
+"0",""

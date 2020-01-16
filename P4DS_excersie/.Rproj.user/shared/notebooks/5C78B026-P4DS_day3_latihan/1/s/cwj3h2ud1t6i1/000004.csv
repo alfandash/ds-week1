@@ -1,0 +1,5 @@
+"0","aggregate("
+"0","  age ~ gender + drink,"
+"0","  data = kopi_data_clean,"
+"0","  FUN = mean"
+"0",")"

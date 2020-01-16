@@ -1,0 +1,254 @@
+---
+title: "P4DS_day1"
+author: "Sitta"
+date: "1/13/2020"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+    highlight: kate
+    theme: united
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+# ini chunk, tempat kita meletakkan code
+```
+
+```{r}
+1+7
+```
+Note:   
+- Cara run code `ctrl + enter`   
+- Cara buat chunk `ctrl + alt + i` untuk windows atau linux atau `cmd + opt + i` untuk mac
+
+# Membuat object
+```{r}
+tempat <- "algoritma"
+tempat
+belajar = "data science"
+```
+
+Note:   
+- untuk mengassign object digunakan `<-` atau `alt + -` pada keyboard
+
+Contoh persamaan dan pertidaksamaan
+```{r}
+tempat == "algoritma"
+tempat != "algoritma"
+```
+
+```{r}
+lokasi_belajar <- "algoritma"
+kelas <- "jupyter"
+kelas
+print(kelas)
+
+kelas == "jupyter"
+```
+
+Untuk membuat nama object, jangan gunakan spasi, lebih baik gunakan `-`, `_`, `.` 
+
+memanggil 2 object dengan fungsi paste().
+
+```{r}
+paste(lokasi_belajar, belajar)
+Belajar <- "bersama sama"
+```
+
+## Data structure
+
+## Vector [object yang memiliki 1 dimensi dan 1 tipe data]
+
+### Character
+
+c() adalah fungsi combine
+
+```{r}
+nama <- "ani"
+
+kelas <- c("iris", "jupyter")
+kelas
+```
+Untuk cek class/tipe data
+```{r}
+class(kelas)
+```
+
+Untuk cek panjang objek
+```{r}
+length(kelas)
+```
+
+### Numeric
+
+Tipe data bilangan real, menerima bilangan desimal
+```{r}
+num <- c(1,8,9.5,3)
+num
+```
+
+```{r}
+class(num)
+```
+
+### Integer
+
+Tipe data yang hanya menerima bilangan bulat
+
+```{r}
+int <- c(3L,9L,10L)
+int
+```
+
+```{r}
+class(int)
+```
+
+```{r}
+int2 <- c(3:10)
+int2
+```
+
+```{r}
+class(int2)
+```
+
+### Logical
+
+```{r}
+logi <- c(TRUE, FALSE, T, F)
+logi
+
+# logi2 <- c(True, TRUE)
+```
+
+```{r}
+class(logi)
+```
+
+Object dengan lebih dari 1 tipe data
+
+```{r}
+gabungan <- c(30, "algoritma",FALSE)
+class(gabungan)
+```
+
+```{r}
+gabungan
+```
+
+## List [punya 1 dimensi dan lebih dari 1 tipe data]
+
+```{r}
+obj_list <- list(c(1, TRUE, "algo"), c(30,1))
+obj_list
+```
+
+```{r}
+obj_list[1]
+obj_list[[1]]
+```
+
+```{r}
+class(obj_list)
+
+# untuk mengambil anggota pertama pada list 1
+obj_list[[1]][1]
+```
+
+## Matrix [Memiliki 1 tipe data dan 2 dimensi]
+
+```{r}
+mat1 <- matrix(data = c(1:10), nrow = 5, ncol = 2, byrow = FALSE)
+mat1
+```
+
+```{r}
+class(mat1)
+```
+
+memanggil anggota dalam matrix
+object[baris, kolom]
+```{r}
+mat1[c(1,2),c(1,2)]
+```
+
+Matrix cara 2
+```{r}
+a <- c(1,5,6)
+b <- c(2,9,0)
+
+mat2 <- cbind(a, b) # cbind = column bind atau menggabungkan 2 column
+class(mat2)
+mat2
+```
+
+Buatlah matrix dari object a dan b menggunakan fungsi rbind
+```{r}
+mat3 <- rbind(a,b)
+mat3
+```
+
+```{r}
+class(mat3)
+```
+
+## data frame [punya 2 dimensi dan lebih dari 1 tipe data ]
+
+```{r}
+df <- data.frame(Nama =  c("a", "b", "c"), Tinggi =  c(160, 170,180))
+df
+```
+
+```{r}
+class(df$Tinggi)
+```
+
+## Explicit coercion
+
+Misal ingin mengubah tipe data variabel tinggi dari numeric ke integer
+```{r}
+df$Tinggi <- as.integer(df$Tinggi)
+df
+```
+
+```{r}
+df$Nama
+```
+
+## Factor
+
+Tipe data karakter yang berulang
+
+```{r}
+gender <- factor(x = c("Female", "Male", "Male", "Male", "None"))
+gender
+```
+
+Ubahlah variabel Nama pada df dari factor menjadi character
+```{r}
+df$Nama <- as.character(df$Nama)
+df
+```
+
+```{r}
+customers <- c("stefanus", "rony", "satrio", "wawan")
+age <- c(17, 15, 20, 19)
+suppliers <- c("starbucks", "kopi kenangan", "fore")
+```
+
+```{r}
+class(customers)
+class(age)
+length(customers)
+length(age)
+```
+
+```{r}
+c(customers, suppliers)
+```

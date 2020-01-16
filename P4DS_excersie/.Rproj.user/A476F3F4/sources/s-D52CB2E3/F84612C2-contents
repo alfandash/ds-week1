@@ -1,0 +1,75 @@
+---
+title: "page_1_latihan"
+author: "Alfan"
+date: "1/15/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+kopi_data_clean <- read.delim("data/caffeinestudy.txt");
+kopi_data_clean
+```
+
+## 1
+
+```{r}
+aggregate(
+  age ~ gender + drink,
+  data = kopi_data_clean,
+  FUN = mean
+)
+
+```
+
+
+## 2
+
+```{r}
+
+kopi_female <- kopi_data_clean[kopi_data_clean$gender == "female", c("age", "gender")];
+kopi_male <- kopi_data_clean[kopi_data_clean$gender == "male", c("age", "gender")];
+mean(kopi_female$age)
+mean(kopi_male$age)
+
+aggregate(
+  age ~ gender,
+  data = kopi_data_clean,
+  FUN = mean
+)
+
+```
+
+
+## 3
+
+```{r}
+
+kopi_male_greentea <- nrow(kopi_data_clean[kopi_data_clean$gender == "male" & kopi_data_clean$drink == "greentea", ])
+
+kopi_male_greentea
+
+```
+
+
+## 4
+
+```{r}
+
+kopi_order_score <- kopi_data_clean[order(kopi_data_clean$score, decreasing = T), ];
+kopi_order_score
+
+```
+
+## 5
+
+```{r}
+
+kopi_coffee_lower_median <- kopi_data_clean[kopi_data_clean$drink == "coffee" & kopi_data_clean$age < median(kopi_data_clean$age), ]
+nrow(kopi_coffee_lower_median)
+
+```
+

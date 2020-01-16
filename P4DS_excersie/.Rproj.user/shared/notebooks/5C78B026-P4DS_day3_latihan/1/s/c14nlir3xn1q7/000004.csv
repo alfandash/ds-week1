@@ -1,0 +1,2 @@
+"0","kopi_data_clean <- read.delim(""data/caffeinestudy.txt"");"
+"0","kopi_data_clean"
